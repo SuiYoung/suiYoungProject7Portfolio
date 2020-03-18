@@ -716,8 +716,6 @@ input[type=checkbox] {
 nav {
   position: fixed;
   z-index: 16;
-  -webkit-box-shadow: 3px 3px 3px #171717;
-          box-shadow: 3px 3px 3px #171717;
 }
 
 #menuToggle {
