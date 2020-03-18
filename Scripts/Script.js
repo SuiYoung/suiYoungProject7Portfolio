@@ -40,7 +40,7 @@ $(function() {
         "Front-End Web Developer"
         ],
         typeSpeed: 0,
-        showCursor: true,
+        showCursor: false,
         backSpeed: 30,
         smartBackspace: true
     });
