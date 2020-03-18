@@ -3,7 +3,18 @@
 //     console.log('ready');
 // });
 
+// smooth scroll
+$('a[href*="#"]').on("click", function(e) {
+    e.preventDefault();
 
+    $("html, body").animate(
+        {
+        scrollTop: $($(this).attr("href")).offset().top
+        },
+        500,
+        "linear"
+    );
+});
 
 
 // my typed.js customization
@@ -14,7 +25,7 @@ $(function() {
         "I'm a Front-End Web Developer! ^1000",
         "I'm Currently Looking For Work! ^1000",
         "Thanks for Stopping By! ^1000",
-        "Junior Front-End Web Developer"
+        "Front-End Web Developer"
         ],
         typeSpeed: 0,
         showCursor: true,
