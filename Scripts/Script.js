@@ -561,7 +561,7 @@ var global = {
             }
             if (count == 10) {
             // Success!
-            alert("Konami code entered!");
+            alert("Konami code entered! Something cool might be coming! Try again Later!");
             document.load('/game.html')
             reset();
             }

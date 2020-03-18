@@ -1,76 +1,119 @@
-<!--
-README!
 
-GAME INSRUCTIONS:
+<!DOCTYPE html>
+<html lang="en">
 
-p    - pause
-ESC  - abandon game
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-Click the big P to choose one of three levels:
-- Casual
-- Medium
-- Hard
+    <!-- link to external css stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./Styles/Sass/styles.css" />
 
-The game will save your stats locally, via localStorage.
-Click the F to see your stats.
+    <!-- link to favicon in browser -->
+    <link rel="icon" href="./Assets/favicon.ico" sizes="16x16" type="image/png">
 
-Click I for these intructions.
+    <!-- link fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Roboto+Slab:400,500,700,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
 
-Flip is a timed card memory game. When starting a level, there's a red bar on top of the screen that shows how much time you have left.
-Click the green cards to see what symbol they uncover and try to find the matching symbol underneath the other cards.
-Uncover two matching symbols in a row to eliminate them from the game.
-Eliminate all cards as fast as you can to win the game. Have fun FLIPing!
--->
-<!-- credit: https://codepen.io/zerospree/pen/bNWbvW -->
+    <!-- Link animate.css -->
+    <link rel="stylesheet" href="animate.css" type="text/css">
+    <title>Sui Young | Konami Code Game</title>
+</head>
 
-<div id="g"></div>
+<body>
+    <!--
+    README!
 
-<p class="logo">
-    <p class="info">Click the P to get started.</p>
-    <div class="card left">
-        <div class="flipper">
-            <div class="f c1">F</div>
-            <div class="b contentbox" id="stats">
-                <div class="padded">
-                    <h2>Figures</h2>
-                    Looks like you haven't FLIPped yet.
-                    <a href="javascript:;" class="playnow">Play now</a>
+    GAME INSRUCTIONS:
+
+    p    - pause
+    ESC  - abandon game
+
+    Click the big P to choose one of three levels:
+    - Casual
+    - Medium
+    - Hard
+
+    The game will save your stats locally, via localStorage.
+    Click the F to see your stats.
+
+    Click I for these intructions.
+
+    Flip is a timed card memory game. When starting a level, there's a red bar on top of the screen that shows how much time you have left.
+    Click the green cards to see what symbol they uncover and try to find the matching symbol underneath the other cards.
+    Uncover two matching symbols in a row to eliminate them from the game.
+    Eliminate all cards as fast as you can to win the game. Have fun FLIPing!
+    -->
+    <!-- credit: https://codepen.io/zerospree/pen/bNWbvW -->
+
+    <div id="g"></div>
+
+    <p class="logo">
+        <p class="info">Click the P to get started.</p>
+        <div class="card left">
+            <div class="flipper">
+                <div class="f c1">F</div>
+                <div class="b contentbox" id="stats">
+                    <div class="padded">
+                        <h2>Figures</h2>
+                        Looks like you haven't FLIPped yet.
+                        <a href="javascript:;" class="playnow">Play now</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card active twist">
-        <div class="flipper">
-            <div class="b f">
-                <div class="c2">L</div>
-            </div>
-        </div>
-    </div>
-    <div class="card left">
-        <div class="flipper">
-            <div class="f c3">I</div>
-            <div class="b contentbox instructions">
-                <div class="padded">
-                    <h2>Instructions</h2>
-                    <p>Press [p] to pause, or [ESC] to abandon game.</p>
-                    <p>Flip is a timed card memory game. Click the green cards to see what symbol they uncover and try
-                        to find the matching symbol underneath the other cards.</p>
-                    <p>Uncover two matching symbols at once to eliminate them from the game.</p>
-                    <p>Eliminate all cards as fast as you can to win the game. Have fun FLIPing!</p>
+        <div class="card active twist">
+            <div class="flipper">
+                <div class="b f">
+                    <div class="c2">L</div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card">
-        <div class="flipper">
-            <div class="f c4">P</div>
-            <div class="b contentbox levels">
-                <a href="javascript:;" data-level="8" class="play">Casual</a>
-                <a href="javascript:;" data-level="18" class="play">Medium</a>
-                <a href="javascript:;" data-level="32" class="play">Hard</a>
+        <div class="card left">
+            <div class="flipper">
+                <div class="f c3">I</div>
+                <div class="b contentbox instructions">
+                    <div class="padded">
+                        <h2>Instructions</h2>
+                        <p>Press [p] to pause, or [ESC] to abandon game.</p>
+                        <p>Flip is a timed card memory game. Click the green cards to see what symbol they uncover and try
+                            to find the matching symbol underneath the other cards.</p>
+                        <p>Uncover two matching symbols at once to eliminate them from the game.</p>
+                        <p>Eliminate all cards as fast as you can to win the game. Have fun FLIPing!</p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="card">
+            <div class="flipper">
+                <div class="f c4">P</div>
+                <div class="b contentbox levels">
+                    <a href="javascript:;" data-level="8" class="play">Casual</a>
+                    <a href="javascript:;" data-level="18" class="play">Medium</a>
+                    <a href="javascript:;" data-level="32" class="play">Hard</a>
+                </div>
+            </div>
+        </div>
 
-    <p class="info">Flip should work best in Google Chrome, decent in Firefox, IE10 and Opera;</p>
-</p>
+        <p class="info">Flip should work best in Google Chrome, decent in Firefox, IE10 and Opera;</p>
+    </p>
+
+        <!-- Font awesome link -->
+        <script src="https://kit.fontawesome.com/dfdc9c622d.js" crossorigin="anonymous"></script>
+        <!-- jquery cdn -->
+        <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+            integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+        <!-- my script -->
+        <script src="././Scripts/game.js" type="text/javascript"></script>
+
+
+
+</body>
+
+
+</html>
