@@ -1,0 +1,60 @@
+/****** FOOTER STYLING ******/
+footer {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(58deg, rgba(2, 0, 36, 1) 0%, rgba(1, 90, 98, 0.8743698162858894) 77%, rgba(3, 92, 115, 1) 100%);
+    color: white;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* footer styling */
+.footercontent {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+    div {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.footercontent h3 {
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.footericon {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footericon i {
+    margin: 2rem;
+    @include fluid-type (2.5rem, 3rem, 360px, 1280px);
+}
+
+.footericon i:hover {
+    text-shadow: 2px 2px 2px #007780;
+}
+
+.footericon i:active,
+.footericon i:focus,
+.footericon i:visited {
+    text-shadow: 1px 1px 1px #000;
+}
+
+.footercontent p {
+    @include fluid-type (1.5rem, 1.8rem, 360px, 1280px);
+    line-height: 1.5;
+    margin: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}

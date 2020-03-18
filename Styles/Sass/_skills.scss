@@ -1,0 +1,62 @@
+.skills {
+    color: white;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.skillDiv {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(142deg, rgba(2, 0, 36, 1) 0%, rgba(1, 90, 98, 0.8743698162858894) 49%, rgba(3, 92, 115, 1) 100%);
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillOverlay {
+    background: rgba(255, 255, 255, 0.212);
+    margin: 0 2rem;
+    width: 100%;
+}
+
+.skillIconDiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 0 auto;
+    width: 85%;
+}
+
+.skillIcon {
+    height: 90%;
+    min-height: 100px;
+    width: calc(100% / 2);
+    min-width: 100px;
+    margin: 2rem;
+}
+
+@media (max-width: 600px) {
+    .skillIconDiv {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        margin: 0 auto;
+        width: 90vw;
+    }
+
+    .skillIcon {
+        height: 90%;
+        min-height: 70px;
+        width: calc(100% / 4);
+        min-width: 70px;
+        margin: 2rem auto;
+
+        h4 {
+            word-break: break;
+        }
+    }
+}

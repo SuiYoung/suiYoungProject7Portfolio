@@ -1,0 +1,212 @@
+/****** NAVIGATION STYLING ******/
+input {
+    display: none;
+    z-index: 15;
+}
+
+input[type=checkbox] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2);
+    /* IE */
+    -moz-transform: scale(2);
+    /* FF */
+    -webkit-transform: scale(2);
+    /* Safari and Chrome */
+    -o-transform: scale(2);
+    /* Opera */
+    transform: scale(2);
+    padding: 10px;
+}
+
+nav {
+    position: fixed;
+    z-index: 1;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -18px;
+    opacity: 0;
+    /* hide this */
+    z-index: 4;
+    /*and place it over the hamburger*/
+    -webkit-touch-callout: none;
+}
+
+/* hamburger */
+#menuToggle .navSpan {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    right: 10px;
+    background: #007780;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px white, -2px -2px 2px white, -2px 2px 2px white, 2px -2px 2px white;
+    z-index: 2;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+}
+
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+    z-index: 2;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #007780;
+    z-index: 3;
+}
+
+/* hide the middle one. */
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+    z-index: 3;
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+    z-index: 3;
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+    position: absolute;
+    width: 100px;
+    height: 105vh;
+    margin: -100px 0 0 -50px;
+    padding: 28px;
+    background: #ffffffbe;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(0%, -200%);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    z-index: 2;
+
+}
+
+#menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li {
+    padding: 1vh 0;
+    font-size: 22px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+#menu i {
+    @include fluid-type (30px, 40px, 420px, 900px);
+    color: $blackColor;
+    text-shadow: 2.5px 2.5px 2.5px teal;
+    margin: 0;
+    text-align: center;
+}
+
+.toggleMenuDescription {
+    background: $blackColor;
+    position: relative;
+    left: 4rem;
+    display: block;
+    width: 150px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+
+    p {
+        color: white;
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+
+    .triangle {
+        border-top: 25px solid transparent;
+        border-right: 25px solid $blackColor;
+        border-left: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        position: absolute;
+        bottom: 5px;
+        left: -49.5px;
+    }
+}
+
+#menu li:last-child {
+    margin-left: 5px;
+}
+
+#menu li:hover {
+    text-shadow: 4px 4px 4px teal;
+    margin-left: 15%;
+    transition: all 0.5s ease-in-out;
+}
+
+#menu li:active,
+#menu li:focus,
+#menu li:visited {
+    text-shadow: 2px 2px 2px teal;
+    margin-left: 15%;
+    transition: all 0.5s ease-in-out;
+}
+
+#menu li:hover .toggleMenuDescription,
+#menu li:focus .toggleMenuDescription,
+#menu li:active .toggleMenuDescription {
+    visibility: visible;
+    opacity: 1;
+}

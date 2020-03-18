@@ -1,0 +1,91 @@
+.container {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(142deg, rgba(2, 0, 36, 1) 0%, rgba(1, 90, 98, 0.8743698162858894) 49%, rgba(3, 92, 115, 1) 100%);
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.overlay {
+    margin: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.178);
+}
+
+.formContainer {
+    width: 75%;
+}
+
+form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    grid-gap: 15px;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    .idField {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .idField2 {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .textField {
+        grid-area: 2 / span 2;
+    }
+
+    .submitButton {
+        grid-area: 3 / span 2;
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .formContainer {
+        width: 90%;
+    }
+
+    form {
+        width: 100%;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5rem 5rem 1fr 5rem;
+        grid-gap: 15px;
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+        margin-left: 0;
+        margin-right: 0;
+
+        .idField {
+            grid-area: 1 / span 2;
+        }
+
+        .idField2 {
+            grid-area: 2 / span 2;
+        }
+
+        .textField {
+            grid-area: 3 / span 2;
+        }
+
+        .submitButton {
+            grid-area: 4 / span 2;
+            width: 100%;
+        }
+    }
+
+    .pBreak2,
+    .pBreak3 {
+        text-align: center;
+    }
+    }

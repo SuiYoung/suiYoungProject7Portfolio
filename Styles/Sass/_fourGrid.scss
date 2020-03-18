@@ -1,0 +1,75 @@
+.fourGrid {
+    height: 90%;
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.178);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(95vw / 2), 1fr));
+    margin: 0 auto;
+    max-width: 1980px;
+    min-width: 300px;
+}
+
+
+.fourGridStyles {
+    width: calc(95vw / 2);
+    min-width: 200px;
+    min-height: 40vh;
+    margin: 0 auto;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(142deg, rgba(2, 0, 36, 1) 0%, rgba(1, 90, 98, 0.8743698162858894) 49%, rgba(3, 92, 115, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.fourGridOverlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.178);
+    height: 42rem;
+}
+
+
+@media (max-width: 1270px) {
+    .fourGrid {
+        grid-template-columns: repeat(auto-fit, minmax(495px, 1fr));
+    }
+
+    .fourGridStyles {
+        padding: 0.5rem 0;
+    }
+}
+
+@media (max-width: 1045px) {
+    .fourGrid {
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    }
+}
+
+@media (max-width: 1010px) {
+    .fourGrid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+}
+
+@media (max-width: 673px) {
+    .fourGrid {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    }
+
+    .fourGridStyles {
+        width: 100%;
+        min-height: 40vh;
+        margin: 0 auto;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(142deg, rgba(2, 0, 36, 1) 0%, rgba(1, 90, 98, 0.8743698162858894) 49%, rgba(3, 92, 115, 1) 100%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 0;
+    }
+}

@@ -1,0 +1,118 @@
+body {
+    background-color: black;
+}
+
+.wrapper {
+    width: 95%;
+    max-width: 1950px;
+    margin: 0 auto;
+}
+
+/* FONT STYLING */
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    @include fluid-type (3.5rem, 8rem, 360px, 1280px);
+}
+
+.headerH2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    @include fluid-type (2rem, 4rem, 360px, 1280px);
+}
+
+.sectionH2 {
+    font-family: 'Satisfy', cursive;
+    @include fluid-type (3rem, 5rem, 360px, 1280px);
+}
+
+h3 {
+    font-family: 'Permanent Marker',
+    cursive;
+    font-weight: 500;
+    @include fluid-type (2.5rem, 3.5rem, 360px, 1280px);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    @include fluid-type (1.45rem, 2.25rem, 360px, 1280px);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    @include fluid-type (1.5rem, 2rem, 360px, 1280px);
+}
+
+/*note this wrapper is only used in one area*/
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    @include fluid-type (1.5rem, 1.8rem, 360px, 1280px);
+    cursor: cell;
+}
+
+a:hover {
+    color: black !important;
+}
+
+/****** GENERAL STYLING ******/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    margin: 5rem 0;
+    color: white;
+    padding: 2rem 0;
+    max-width: 1920px;
+}
+
+// accessibility styling:
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    /* added line */
+}

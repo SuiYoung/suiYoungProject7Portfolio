@@ -1,0 +1,129 @@
+.portfolio {
+    color: white;
+    
+}
+
+.portfolioItem {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(142deg, rgba(2, 0, 36, 1) 0%, rgba(1, 90, 98, 0.8743698162858894) 49%, rgba(3, 92, 115, 1) 100%);
+    padding: 0.5rem 0;
+    margin: 2rem 0;
+}
+
+.portfolioOverlay {
+    margin: 2rem;
+    background: rgba(255, 255, 255, 0.178);
+    height: 90%;
+}
+
+.portfolioFlex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.portfolioPoints {
+    width: 55%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.languagesUsed,
+.portfolioLinks {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    width: 100%;
+
+    li {
+        margin: 5px;
+        padding: 1rem;
+        background: $blackColor;
+        border-radius: 5px;
+        font-family: 'Montserrat',
+            sans-serif;
+        @include fluid-type (1.25rem, 1.8rem, 360px, 1280px);
+    }
+
+    a {
+        color: white;
+    }
+}
+
+.portfolioTxt {
+    width: 100%;
+    margin: 1rem 0;
+    float: right;
+}
+
+.largeImg {
+    width: 100%;
+
+    img {
+        display: block;
+    }
+}
+
+.portfolioItem1 {
+    cursor: url("./../../Assets/Mouse/tarot-cards_mouse.png"), auto;
+}
+
+.portfolioItem2 {
+    cursor: url("./../../Assets/Mouse/foodmouse.png"),
+    auto;
+}
+
+.portfolioItem3 {
+    cursor: url("./../../Assets/Mouse/icons8-chat-64.png"),
+    auto;
+}
+
+.portfolioItem4 {
+    cursor: url("./../../Assets/Mouse/makeupMouse.png"), auto;
+}
+
+@media (max-width: 1412px) {
+    .portfolioFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .largeImg {
+        width: 50%;
+    }
+}
+
+@media (max-width: 900px) {
+    .largeImg {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolioFlex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .largeImg {
+        width: 100%;
+    }
+
+    .portfolioPoints {
+        width: 100%;
+    }
+}

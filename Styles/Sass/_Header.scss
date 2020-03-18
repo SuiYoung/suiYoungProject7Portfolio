@@ -1,0 +1,122 @@
+/****** HEADER STYLING ******/
+header {
+    height: 100vh;
+    background: url(./../../Assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.headertext h1 {
+    margin: 0;
+    color: white;
+    font-size: 5rem;
+}
+
+h2 {
+    margin: 0;
+    color: white;
+}
+
+.headercontent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.headertext img {
+    width: 20vh;
+    margin: 2% 1% 2% 1%;
+
+    a {
+        padding: 10rem;
+    }
+}
+
+.headertext {
+    margin-bottom: 6vh;
+    display: block;
+    width: 90%;
+}
+
+i {
+    color: white;
+    @include fluid-type (5.5rem, 8rem, 360px, 1280px);
+}
+
+i:hover {
+    text-shadow: 2px 2px 2px white;
+}
+
+.contactbuttonicon i:hover {
+    text-shadow: 2px 2px 2px white;
+}
+
+.contactbuttonicon i:active,
+.contactbuttonicon i:focus,
+.contactbuttonicon i:visited {
+    text-shadow: 1px 1px 1px #000;
+}
+
+.contactbuttoninput {
+    display: none;
+}
+
+.arrowdown1 {
+    position: relative;
+    bottom: -10rem;
+}
+
+input[type=checkbox] {
+    /* Double-sized Checkboxes */
+    -ms-transform: scale(2);
+    /* IE */
+    -moz-transform: scale(2);
+    /* FF */
+    -webkit-transform: scale(2);
+    /* Safari and Chrome */
+    -o-transform: scale(2);
+    /* Opera */
+    transform: scale(2);
+    padding: 10px;
+
+}
+
+#checkbox {
+    cursor: cell;
+}
+
+
+.contactFloat {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 5;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    box-shadow: 3px 3px 3px teal;
+
+    i {
+        @include fluid-type (3.5rem, 5rem, 360px, 1280px);
+        color: $blackColor;
+    }
+}
+
+.contactFloat:hover {
+        box-shadow: 5px 5px 5px teal;
+}
+
+.contactFloat:active,
+.contactFloat:focus {
+    box-shadow: 2px 2px 2px teal;
+}
