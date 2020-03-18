@@ -1,5 +1,12 @@
+// document ready
+// $(document).ready(function () {
+//     console.log('ready');
+// });
 
-// typed.js customization
+
+
+
+// my typed.js customization
 $(function() {
     $(".headerH2").typed({
         strings: [
