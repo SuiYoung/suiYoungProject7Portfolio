@@ -11,13 +11,13 @@ body {
 /* FONT STYLING */
 h1 {
     font-family: 'Permanent Marker', cursive;
-    @include fluid-type (3.5rem, 8rem, 360px, 1280px);
+    @include fluid-type (4rem, 8rem, 360px, 1280px);
 }
 
 .headerH2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    @include fluid-type (2rem, 4rem, 360px, 1280px);
+    @include fluid-type (2rem, 3rem, 360px, 1280px);
 }
 
 .sectionH2 {

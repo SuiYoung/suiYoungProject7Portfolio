@@ -11,12 +11,12 @@ body {
 /* FONT STYLING */
 h1 {
   font-family: 'Permanent Marker', cursive;
-  font-size: calc(3.5rem + 4.5 * ((100vw - 360px) / 920));
+  font-size: calc(4rem + 4 * ((100vw - 360px) / 920));
 }
 
 @media screen and (max-width: 360px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -29,7 +29,7 @@ h1 {
 .headerH2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: calc(2rem + 2 * ((100vw - 360px) / 920));
+  font-size: calc(2rem + 1 * ((100vw - 360px) / 920));
 }
 
 @media screen and (max-width: 360px) {
@@ -40,7 +40,7 @@ h1 {
 
 @media screen and (min-width: 1280px) {
   .headerH2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 

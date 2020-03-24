@@ -33,18 +33,19 @@ $(document).ready(function() {
 
 
 // my typed.js customization
+
 $(function() {
     $(".headerH2").typed({
         strings: [
-            "... ^1500",
-        "I'm a Front-End Web Developer! ^1000",
-        "I'm Currently Looking For Work! ^1000",
-        "Thanks for Stopping By! ^1000",
+            "... ^1250",
+        "I'm a Front-End Web Developer! ^800",
+        "I'm Currently Looking For Work! ^800",
+        "Thanks for Stopping By! ^800",
         "Front-End Web Developer"
         ],
         typeSpeed: 0,
         showCursor: false,
-        backSpeed: 30,
+        backSpeed: 20,
         smartBackspace: true
     });
     });
