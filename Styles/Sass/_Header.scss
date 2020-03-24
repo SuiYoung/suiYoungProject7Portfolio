@@ -47,7 +47,7 @@ h2 {
 
 i {
     color: white;
-    @include fluid-type (5.5rem, 8rem, 360px, 1280px);
+    @include fluid-type (3.5rem, 6rem, 360px, 1280px);
     margin: 1rem;
 }
 
@@ -55,23 +55,19 @@ i:hover {
     text-shadow: 2px 2px 2px white;
 }
 
-.contactbuttonicon i:hover {
+.headerButtons i:hover {
     text-shadow: 2px 2px 2px white;
 }
 
-.contactbuttonicon i:active,
-.contactbuttonicon i:focus,
-.contactbuttonicon i:visited {
+.headerButtons i:active,
+.headerButtons i:focus,
+.headerButtons i:visited {
     text-shadow: 1px 1px 1px #000;
-}
-
-.contactbuttoninput {
-    display: none;
 }
 
 .arrowdown1 {
     position: relative;
-    bottom: -10rem;
+    bottom: -12%;
 }
 
 input[type=checkbox] {

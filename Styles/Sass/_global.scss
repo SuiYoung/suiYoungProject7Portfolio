@@ -96,6 +96,23 @@ section {
     max-width: 1920px;
 }
 
+//CSS animation for slide in to be used with jQuery
+.slideIn {
+    transform: translateY(150px);
+    animation: come-in 0.8s ease forwards;
+}
+
+.slideIn:nth-child(odd) {
+    animation-duration: 0.6s;
+    /* So they look staggered */
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateY(0);
+    }
+}
+
 // accessibility styling:
 .sr-only {
     position: absolute;
