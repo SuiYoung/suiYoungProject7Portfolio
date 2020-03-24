@@ -282,7 +282,7 @@ var global = {
             }
             if (count == 10) {
             // Success!
-            alert("Konami code entered! Something cool might be coming! Try again Later!");
+            alert("Konami code entered! Something cool might be coming! For now, enjoy this!");
             window.location.href = "game.html";
             reset();
             }

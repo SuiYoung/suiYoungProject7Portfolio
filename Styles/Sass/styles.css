@@ -117,7 +117,24 @@ p {
   }
 }
 
-/*note this wrapper is only used in one area*/
+li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: calc(1.5rem + 0.5 * ((100vw - 360px) / 920));
+}
+
+@media screen and (max-width: 360px) {
+  li {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  li {
+    font-size: 2rem;
+  }
+}
+
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -496,6 +513,7 @@ h2 {
 i {
   color: white;
   font-size: calc(5.5rem + 2.5 * ((100vw - 360px) / 920));
+  margin: 1rem;
 }
 
 @media screen and (max-width: 360px) {
@@ -1234,6 +1252,32 @@ h4 {
   .portfolioPoints {
     width: 100%;
   }
+}
+
+.useContainer {
+  margin: 2rem 1rem auto;
+  width: 80%;
+}
+
+.inspText {
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.useP {
+  font-weight: bold;
+}
+
+.itemBold {
+  font-weight: bold;
+}
+
+.useLi {
+  margin-left: 8rem;
+}
+
+.useUlSep {
+  margin-bottom: 2rem;
 }
 
 .container {
