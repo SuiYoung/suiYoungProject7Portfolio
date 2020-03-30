@@ -118,7 +118,16 @@ nav {
     justify-content: center;
     align-content: center;
     z-index: 2;
+}
 
+@media screen and (max-height: 600px) {
+    #menu {
+        position: absolute;
+        width: 100px;
+        height: 111vh;
+        margin: -79px 0 0 -50px;
+        padding: 32px;
+    }
 }
 
 #menu ul {
@@ -187,7 +196,7 @@ nav {
 }
 
 #menu li:last-child {
-    margin-left: 5px;
+    margin-left: 2px;
 }
 
 #menu li:hover {

@@ -140,6 +140,7 @@ a {
   text-transform: uppercase;
   -webkit-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  color: paleturquoise;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: calc(1.5rem + 0.3 * ((100vw - 360px) / 920));
@@ -561,6 +562,8 @@ i:hover {
 
 .headerButtons i:hover {
   text-shadow: 2px 2px 2px white;
+  visibility: visible;
+  opacity: 1;
 }
 
 .headerButtons i:active,
@@ -880,6 +883,16 @@ nav {
   z-index: 2;
 }
 
+@media screen and (max-height: 600px) {
+  #menu {
+    position: absolute;
+    width: 100px;
+    height: 111vh;
+    margin: -79px 0 0 -50px;
+    padding: 32px;
+  }
+}
+
 #menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -981,7 +994,7 @@ nav {
 }
 
 #menu li:last-child {
-  margin-left: 5px;
+  margin-left: 2px;
 }
 
 #menu li:hover {
@@ -1202,26 +1215,6 @@ h4 {
   display: block;
 }
 
-.portfolioItem0 {
-  cursor: url("./../../Assets/Mouse/icons8-spa-flower-64.png"), auto;
-}
-
-.portfolioItem1 {
-  cursor: url("./../../Assets/Mouse/tarot-cards_mouse.png"), auto;
-}
-
-.portfolioItem2 {
-  cursor: url("./../../Assets/Mouse/foodmouse.png"), auto;
-}
-
-.portfolioItem3 {
-  cursor: url("./../../Assets/Mouse/icons8-chat-64.png"), auto;
-}
-
-.portfolioItem4 {
-  cursor: url("./../../Assets/Mouse/makeupMouse.png"), auto;
-}
-
 @media (max-width: 1412px) {
   .portfolioFlex {
     display: -webkit-box;
@@ -1367,6 +1360,12 @@ form .submitButton {
   -ms-grid-row: 3;
   grid-area: 3 / span 2;
   width: 100%;
+}
+
+.contactLink {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 950px) {

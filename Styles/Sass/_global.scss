@@ -57,6 +57,7 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     transition: color 0.3s ease;
+    color: paleturquoise;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     @include fluid-type (1.5rem, 1.8rem, 360px, 1280px);

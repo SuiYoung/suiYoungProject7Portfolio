@@ -57,6 +57,8 @@ i:hover {
 
 .headerButtons i:hover {
     text-shadow: 2px 2px 2px white;
+    visibility: visible;
+    opacity: 1;
 }
 
 .headerButtons i:active,
@@ -88,6 +90,8 @@ input[type=checkbox] {
 #checkbox {
     cursor: cell;
 }
+
+
 
 
 .contactFloat {

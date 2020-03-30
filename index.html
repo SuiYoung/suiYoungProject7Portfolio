@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" content="no-cache">
+    <meta http-equiv="Expires" content="0" />
 
     <!-- link to external css stylesheet-->
     <link rel="stylesheet" type="text/css" href="./Styles/Sass/styles.css" />
@@ -104,6 +107,17 @@
                     </li>
 
                     <li>
+                        <a href="#blog"><i class="fab fa-medium"></i></a>
+                        <p class="sr-only"> My Blog </p>
+                        <div class="toggleMenuDescription">
+                            <span class="triangle"></span>
+                            <a href="#blog">
+                                <p>Blog</p>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li>
                         <a href="https://drive.google.com/file/d/1v2fRh-eEdeDJs-mKWTWu12MT1W1v-D4P/view?usp=sharinge"
                             target="_blank"><i class="fas fa-file"></i></a>
                         <p class="sr-only"> Download My Resume </p>
@@ -127,12 +141,12 @@
 
             <div class="headerButtons">
                 <!-- button to autoscroll down to the contact me section -->
-                <a class=fadeIn href="https://github.com/ECSYoung/ECSYoung.github.io/blob/master/README.md" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/ECSYoung/ECSYoung.github.io/blob/master/README.md" target="_blank"><i class="fab fa-github"></i></a>
 
-                <a class=fadeIn href="https://twitter.com/ECSYoungCodes" target="_blank"><i
+                <a href="https://twitter.com/ECSYoungCodes" target="_blank"><i
                         class="fab fa-twitter"></i></a>
 
-                <a class=fadeIn href="https://medium.com/@ECSYoungCodes" target="_blank"><i
+                <a href="#blog"><i
                         class="fab fa-medium"></i></a>
 
             </div>
@@ -481,9 +495,26 @@
                             <li class="useLi"><span class="itemBold"><a
                                         href="https://www.onenote.com" target= "_blank">One Note</a></span> - Note taking across all platforms
                             </li>
-                            <li class="useLi"><span class="itemBold"><a href="www.lastpass.com" target= "_blank">Last Pass</a></span> - Password Manager</li>
+                            <li class="useLi"><span class="itemBold"><a href="https://www.lastpass.com/"
+                                        target="_blank">Last Pass</a></span> - Password Manager</li>
                         </ul>
 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BLOG SECTION -->
+        <section id="blog" class="blog">
+            <h2 class="sectionH2">Blog</h2>
+            <div class="container">
+                <div class="overlay">
+                    <div class="formContainer fadeIn">
+                        <blockquote class="embedly-card" data-card-controls="0" data-card-theme="dark">
+                            <h4><a href="https://medium.com/@ECSYoungCodes" target="_blank">Sui Young @ Medium</a></h4>
+                            <p>Read writing from Sui Young on Medium. Sharing personal experiences, informative tips and points in a day in the life of a developer!</p>
+                        </blockquote>
+                        <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
                     </div>
                 </div>
             </div>
@@ -509,6 +540,9 @@
             
                             <button class="submitButton" type="submit">Send Email</button>
                         </form>
+                        <div class= "contactLink">
+                            <p>Or you can contact me at: <a href= "mailto:sui@xyoung.ca">sui@xyoung.ca</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -522,7 +556,7 @@
         <!-- social media links, email, and copyright info, and a footernavigation -->
         <div class="footercontent" id="socialMedia">
             <div>
-                <h3 class="animated fadeInDown">Contact Me</h3>
+                <h3 class="animated fadeInDown">You Can Also Find Me...</h3>
                 <p>Through any of the following:</p>
             </div>
             <div class="footericon">
