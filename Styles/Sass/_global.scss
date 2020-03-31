@@ -46,6 +46,10 @@ p {
     @include fluid-type (1.5rem, 2rem, 360px, 1280px);
 }
 
+.pBreak {
+    display: block;
+}
+
 li {
         font-family: 'Montserrat',
         sans-serif;
