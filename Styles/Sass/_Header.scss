@@ -39,6 +39,33 @@ h2 {
     }
 }
 
+.suiButton {
+    cursor: cell;
+}
+
+.WhatsItMean {
+    width: 320px;
+    color: white;
+    background: $blackColor;
+    padding: 2rem;
+    position: absolute;
+    top: 2.5%;
+    right: 2.5%;
+    opacity: 0.75;
+    display: none;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    border: 1px solid #333;
+    background-color: #161616;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+}
+
+
 .headertext {
     margin-bottom: 6vh;
     display: block;
@@ -115,7 +142,7 @@ input[type=checkbox] {
 }
 
 .contactFloat:hover {
-        box-shadow: 5px 5px 5px teal;
+    box-shadow: 5px 5px 5px teal;
 }
 
 .contactFloat:active,

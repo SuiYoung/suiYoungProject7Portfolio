@@ -536,6 +536,32 @@ h2 {
   padding: 10rem;
 }
 
+.suiButton {
+  cursor: cell;
+}
+
+.WhatsItMean {
+  width: 320px;
+  color: white;
+  background: #171717;
+  padding: 2rem;
+  position: absolute;
+  top: 2.5%;
+  right: 2.5%;
+  opacity: 0.75;
+  display: none;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  border: 1px solid #333;
+  background-color: #161616;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+}
+
 .headertext {
   margin-bottom: 6vh;
   display: block;
