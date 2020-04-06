@@ -23,6 +23,8 @@ h1 {
 .sectionH2 {
     font-family: 'Satisfy', cursive;
     @include fluid-type (3rem, 5rem, 360px, 1280px);
+    margin: 1.5rem 0;
+
 }
 
 h3 {
@@ -37,7 +39,7 @@ h3 {
 h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    @include fluid-type (1.45rem, 2.25rem, 360px, 1280px);
+    @include fluid-type (1.25rem, 2rem, 360px, 1280px);
 }
 
 p {

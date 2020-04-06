@@ -28,16 +28,24 @@ h4 {
 .skillIconDiv {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    margin: 0 auto;
-    width: 85%;
+    margin: 0 auto 3rem auto;
+    width: 100%;
 }
 
 .skillIcon {
-    height: 90%;
+    height: 100%;
     min-height: 100px;
-    width: calc(100% / 2);
+    width: 93%;
     min-width: 100px;
-    margin: 2rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 55%;
+    }
 }
 
 @media (max-width: 600px) {
@@ -52,7 +60,7 @@ h4 {
         height: 90%;
         min-height: 70px;
         width: calc(100% / 4);
-        min-width: 70px;
+        min-width: 96px;
         margin: 2rem auto;
 
         h4 {
