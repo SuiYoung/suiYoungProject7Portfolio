@@ -19,7 +19,8 @@ $form.on('submit', (e) => {
         swal({
             icon: 'success',
             buttons: false,
-            timer: 1050
+            timer: 1850,
+            text: 'Thank you! I will respond as soon as possible!'
         })
     }
 })

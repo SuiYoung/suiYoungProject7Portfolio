@@ -508,7 +508,14 @@ h2 {
   color: white;
 }
 
+.headerBorder {
+  height: 100vh;
+  width: 100vw;
+  border: 5rem solid black;
+}
+
 .headercontent {
+  height: 100vh;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -517,8 +524,6 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100vh;
-  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -526,6 +531,9 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   overflow: hidden;
+  width: 25%;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.425);
 }
 
 .headertext img {
