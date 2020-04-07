@@ -55,6 +55,12 @@
     }
 }
 
+@media (max-width: 820px) {
+    .fourGridOverlay {
+        height: 90%;
+    }
+}
+
 @media (max-width: 673px) {
     .fourGrid {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -70,5 +76,11 @@
         justify-content: center;
         align-items: center;
         padding: 1rem 0;
+    }
+}
+
+@media (max-width: 386px) {
+    .fourGridOverlay {
+        height: 95%;
     }
 }

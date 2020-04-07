@@ -1,0 +1,50 @@
+.imgDiv {
+    min-height: 35vh;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.quoteBkGround {
+    background: linear-gradient(142deg, rgba(2, 0, 36, 0.422) 0%, rgba(1, 90, 98, 0.422) 49%, rgba(3, 92, 115, 0.422) 100%, transparent),
+    url('./../../Assets/DAY-juanita-swart-vaEKy00Inc8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+
+    img {
+        transform: scale(3);
+    }
+}
+
+.quoteBkGround2 {
+    background: linear-gradient(142deg, rgba(2, 0, 36, 0.422) 0%, rgba(1, 90, 98, 0.422) 49%, rgba(3, 92, 115, 0.422) 100%, transparent),
+    url('./../../Assets/DUSKGREY-kasper-lau-TbnjClmnkME-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+    img {
+        transform: scale(3);
+    }
+}
+
+.overlay2 {
+    background: rgba(0, 0, 0, 0.466);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 29.5rem;
+    width:calc(100% - 4rem);
+    margin: 0 auto;
+}
+
+.quoteText {
+    font-size: 2.5rem;
+}

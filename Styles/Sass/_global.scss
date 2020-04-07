@@ -3,7 +3,7 @@ body {
 }
 
 .wrapper {
-    width: 95%;
+    width: 90%;
     max-width: 1950px;
     margin: 0 auto;
 }
@@ -11,13 +11,13 @@ body {
 /* FONT STYLING */
 h1 {
     font-family: 'Permanent Marker', cursive;
-    @include fluid-type (4rem, 8rem, 360px, 1280px);
+    @include fluid-type (3.5rem, 5rem, 360px, 1280px);
 }
 
 .headerH2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    @include fluid-type (2rem, 3rem, 360px, 1280px);
+    @include fluid-type (1.85rem, 2.25rem, 360px, 1280px);
 }
 
 .sectionH2 {
@@ -40,6 +40,14 @@ h4 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     @include fluid-type (1.25rem, 2rem, 360px, 1280px);
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    text-align: center;
+    padding: 0 0.65rem;
+    @include fluid-type (1.55rem, 2.5rem, 360px, 1280px);
 }
 
 p {
