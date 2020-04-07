@@ -6,6 +6,8 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    max-width: 1950px;
+    margin: 0 auto;
 }
 
 .headerText h1 {
@@ -20,13 +22,13 @@ h2 {
 }
 
 .headerBorder {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     border: 5rem solid black;
 }
 
 .headerContent {
-    height: 100vh;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -51,7 +53,7 @@ h2 {
 }
 
 .headerText img {
-    width: 20vh;
+    width: 80%;
     margin: 2% 1% 2% 1%;
 
     a {

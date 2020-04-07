@@ -217,31 +217,22 @@ section {
   max-width: 1920px;
 }
 
-.slideIn {
-  -webkit-transform: translateY(150px);
-          transform: translateY(150px);
-  -webkit-animation: come-in 0.8s ease forwards;
-          animation: come-in 0.8s ease forwards;
+canvas {
+  display: block;
+  vertical-align: bottom;
 }
 
-.slideIn:nth-child(odd) {
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-  /* So they look staggered */
-}
-
-@-webkit-keyframes slideIn {
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-}
-
-@keyframes slideIn {
-  to {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.288);
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sr-only {
@@ -515,6 +506,8 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  max-width: 1950px;
+  margin: 0 auto;
 }
 
 .headerText h1 {
@@ -541,13 +534,13 @@ h2 {
 }
 
 .headerBorder {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   border: 5rem solid black;
 }
 
 .headerContent {
-  height: 100vh;
+  height: 100%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -581,7 +574,7 @@ h2 {
 }
 
 .headerText img {
-  width: 20vh;
+  width: 80%;
   margin: 2% 1% 2% 1%;
 }
 
@@ -727,7 +720,6 @@ input[type=checkbox] {
 }
 
 .imgDiv {
-  min-height: 35vh;
   width: 100%;
   padding: 2rem 0;
   display: -webkit-box;
@@ -783,6 +775,7 @@ input[type=checkbox] {
           align-items: center;
   min-height: 29.5rem;
   width: calc(100% - 4rem);
+  height: calc(100% - 4rem);
   margin: 0 auto;
 }
 
@@ -791,23 +784,21 @@ input[type=checkbox] {
 }
 
 .fourGrid {
-  height: 90%;
   margin: 2rem;
   background: rgba(255, 255, 255, 0.178);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(calc(90vw / 2), 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(calc(90vw / 2), 1fr));
+  -ms-grid-columns: (minmax(calc(100% / 2), 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(calc(100% / 2), 1fr));
   margin: 0 auto;
-  max-width: 1980px;
+  max-width: 1950px;
   min-width: 300px;
 }
 
 .fourGridStyles {
-  width: calc(90vw / 2);
+  width: 100%;
   min-width: 200px;
   margin: 0 auto;
-  background: #020024;
   background: linear-gradient(142deg, #020024 0%, rgba(1, 90, 98, 0.87437) 49%, #035c73 100%);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -835,7 +826,9 @@ input[type=checkbox] {
   -ms-flex-line-pack: center;
       align-content: center;
   margin: 2rem;
+  padding: 1rem;
   background: rgba(255, 255, 255, 0.178);
+  height: calc(100% - 4rem);
   min-height: 35rem;
 }
 
@@ -1625,21 +1618,35 @@ form .submitButton {
 
 .contactToolTip1 {
   position: absolute;
-  top: -8%;
+  top: -3rem;
   z-index: 1;
 }
 
 .contactToolTip2 {
   position: absolute;
-  top: -8%;
-  right: 31%;
+  top: -3rem;
+  left: 31rem;
   z-index: 1;
 }
 
 .contactToolTip3 {
   position: absolute;
-  top: 7%;
+  top: 4rem;
   z-index: 15;
+}
+
+@media (max-width: 950px) {
+  .contactToolTip2 {
+    position: absolute;
+    top: 4rem;
+    left: 0rem;
+    z-index: 15;
+  }
+  .contactToolTip3 {
+    position: absolute;
+    top: 10rem;
+    z-index: 15;
+  }
 }
 
 .hidden {

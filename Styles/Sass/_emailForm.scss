@@ -65,21 +65,36 @@ form {
 
 .contactToolTip1 {
     position: absolute;
-    top: -8%;
+    top: -3rem;
     z-index: 1;
 }
 
 .contactToolTip2 {
     position: absolute;
-    top: -8%;
-    right: 31%;
+    top: -3rem;
+    left: 31rem;
     z-index: 1;
 }
 
 .contactToolTip3 {
     position: absolute;
-    top: 7%;
+    top: 4rem;
     z-index: 15;
+}
+
+@media (max-width: 950px) {
+    .contactToolTip2 {
+        position: absolute;
+        top: 4rem;
+        left: 0rem;
+        z-index: 15;
+    }
+
+    .contactToolTip3 {
+        position: absolute;
+        top: 10rem;
+        z-index: 15;
+    }
 }
 
 .hidden {
