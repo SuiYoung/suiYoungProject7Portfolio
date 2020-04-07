@@ -50,7 +50,7 @@
         justify-content: center;
         align-items: center;
         margin: 5px;
-        padding: 1rem;
+        padding: 0.5rem;
         background: $blackColor;
         border-radius: 5px;
         font-family: 'Montserrat',
@@ -116,16 +116,19 @@
         }
     }
 
-    .languagesUsed {
+    .languagesUsed,
+    .portfolioLinks {
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        padding: 0.5rem;
     }
 
     .portfolioLinks {
-        width: 25rem;
+        align-items: center;
+        width: 23rem;
     }
 
     .largeImg {
@@ -155,5 +158,10 @@
 
     .portfolioPoints {
         width: 100%;
+    }
+
+    .portfolioLinks {
+        align-items: center;
+        width: 18rem;
     }
 }
