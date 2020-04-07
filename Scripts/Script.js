@@ -9,25 +9,49 @@ $(".suiButton").on("click", function() {
 });
 
 // Tooltip only Text
-        // Tooltip only Text
-        $('.suiButton2').hover(function(){
-                // Hover over code
-                var title = $(this).attr('title');
-                $(this).data('tipText', title).removeAttr('title');
-                $('<p class="tooltip"></p>')
-                .text(title)
-                .appendTo('body')
-                .fadeIn('slow');
-        }, function() {
-                // Hover out code
-                $(this).attr('title', $(this).data('tipText'));
-                $('.tooltip').remove();
-        }).mousemove(function(e) {
-                var mousex = e.pageX + 20; //Get X coordinates
-                var mousey = e.pageY + 10; //Get Y coordinates
-                $('.tooltip')
-                .css({ top: mousey, left: mousex })
-        });
+// Tooltip only Text
+$('.suiButton2').hover(function(){
+        // Hover over code
+        var title = $(this).attr('title');
+        $(this).data('tipText', title).removeAttr('title');
+        $('<p class="tooltip"></p>')
+        .text(title)
+        .appendTo('body')
+        .fadeIn('slow');
+}, function() {
+        // Hover out code
+        $(this).attr('title', $(this).data('tipText'));
+        $('.tooltip').remove();
+}).mousemove(function(e) {
+        var mousex = e.pageX + 20; //Get X coordinates
+        var mousey = e.pageY + 10; //Get Y coordinates
+        $('.tooltip')
+        .css({ top: mousey, left: mousex })
+});
+
+// tooltips for contactform on focus
+$("#name").focusout(function() {
+        $("#nameInput").addClass("hidden");
+    })
+    .focusin(function () {
+        $("#nameInput").removeClass("hidden");
+    });
+
+$("#email")
+    .focusout(function () {
+        $("#emailInput").addClass("hidden");
+    })
+    .focusin(function () {
+        $("#emailInput").removeClass("hidden");
+    });
+
+$("#message")
+    .focusout(function () {
+        $("#messageInput").addClass("hidden");
+    })
+    .focusin(function () {
+        $("#messageInput").removeClass("hidden");
+    });
 
 // smooth scroll
 $('a[href*="#"]').on("click", function(e) {

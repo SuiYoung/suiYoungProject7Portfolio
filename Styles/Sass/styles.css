@@ -1619,9 +1619,31 @@ form .submitButton {
 .contactToolTip {
   width: auto-fit;
   background: #171717;
-  border-radius: 25px;
+  border-radius: 5px;
   padding: 0.5rem;
+}
+
+.contactToolTip1 {
   position: absolute;
+  top: -8%;
+  z-index: 1;
+}
+
+.contactToolTip2 {
+  position: absolute;
+  top: -8%;
+  right: 31%;
+  z-index: 1;
+}
+
+.contactToolTip3 {
+  position: absolute;
+  top: 7%;
+  z-index: 15;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 @media (max-width: 950px) {
