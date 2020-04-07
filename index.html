@@ -762,14 +762,26 @@
                         <form action="https://formspree.io/mzbvrjyr" method="POST">
                             <!-- 2x Input for name and email address -->
                             <label for="name" class="visuallyHidden">Name:</label>
-                            <input placeholder="&nbsp;Name" type="text" required="true" id="name" class="idField">
+                            <div class="contactToolTip">
+                                <p>Enter Your Name Here</p>
+                            </div>
+                            <input placeholder="&nbsp;Name" type="text" required="true" id="name" class="idField" title= "Enter Your Name Here">
+                            
             
                             <label for="email" class="visuallyHidden">Email:</label>
-                            <input type="email" placeholder="&nbsp;Email address" required="true" id="email" class="idField2">
-            
-            
+                            <div class="contactToolTip">
+                                <p>Enter Your Email Here</p>
+                            </div>
+                            <input type="email" placeholder="&nbsp;Email address" required="true" id="email"
+                                class="idField2" title="Enter Your Email Here">
+                            
                             <!-- large textbox input for comment -->
-                            <textarea name="comments" placeholder="&nbsp;Message" cols="30" rows="10" class="textField" id="message"></textarea>
+                            <label for="message" class="visuallyHidden">Your Message:</label>
+                            <div class="contactToolTip">
+                                <p>What's Your Message?</p>
+                            </div>
+                            <textarea name="comments" placeholder="&nbsp;Message" cols="30" rows="10" class="textField"
+                                id="message" title="What's Your Message?"></textarea>
             
                             <button class="submitButton" type="submit">Send Email</button>
                         </form>

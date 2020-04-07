@@ -747,7 +747,6 @@ input[type=checkbox] {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.5;
 }
 
 .quoteBkGround img {
@@ -797,17 +796,16 @@ input[type=checkbox] {
   background: rgba(255, 255, 255, 0.178);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(calc(95vw / 2), 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(calc(95vw / 2), 1fr));
+  -ms-grid-columns: (minmax(calc(90vw / 2), 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(calc(90vw / 2), 1fr));
   margin: 0 auto;
   max-width: 1980px;
-  min-width: 250px;
+  min-width: 300px;
 }
 
 .fourGridStyles {
-  width: calc(95vw / 2);
+  width: calc(90vw / 2);
   min-width: 200px;
-  min-height: 40vh;
   margin: 0 auto;
   background: #020024;
   background: linear-gradient(142deg, #020024 0%, rgba(1, 90, 98, 0.87437) 49%, #035c73 100%);
@@ -838,7 +836,7 @@ input[type=checkbox] {
       align-content: center;
   margin: 2rem;
   background: rgba(255, 255, 255, 0.178);
-  min-height: 42rem;
+  min-height: 35rem;
 }
 
 @media (max-width: 1270px) {
@@ -865,12 +863,6 @@ input[type=checkbox] {
   }
 }
 
-@media (max-width: 820px) {
-  .fourGridOverlay {
-    height: 90%;
-  }
-}
-
 @media (max-width: 673px) {
   .fourGrid {
     -ms-grid-columns: (minmax(100%, 1fr))[auto-fit];
@@ -892,12 +884,6 @@ input[type=checkbox] {
         -ms-flex-align: center;
             align-items: center;
     padding: 1rem 0;
-  }
-}
-
-@media (max-width: 386px) {
-  .fourGridOverlay {
-    height: 95%;
   }
 }
 
@@ -1600,6 +1586,7 @@ form {
   font-size: 2.5rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
+  position: relative;
 }
 
 form .idField {
@@ -1627,6 +1614,14 @@ form .submitButton {
   width: 100%;
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.contactToolTip {
+  width: auto-fit;
+  background: #171717;
+  border-radius: 25px;
+  padding: 0.5rem;
+  position: absolute;
 }
 
 @media (max-width: 950px) {

@@ -3,16 +3,16 @@
     margin: 2rem;
     background: rgba(255, 255, 255, 0.178);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(calc(95vw / 2), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(calc(90vw / 2), 1fr));
     margin: 0 auto;
     max-width: 1980px;
-    min-width: 250px;
+    min-width: 300px;
 }
 
+
 .fourGridStyles {
-    width: calc(95vw / 2);
+    width: calc(90vw / 2);
     min-width: 200px;
-    min-height: 40vh;
     margin: 0 auto;
     background: rgb(2, 0, 36);
     background: linear-gradient(142deg, rgba(2, 0, 36, 1) 0%, rgba(1, 90, 98, 0.8743698162858894) 49%, rgba(3, 92, 115, 1) 100%);
@@ -29,7 +29,7 @@
     align-content: center;
     margin: 2rem;
     background: rgba(255, 255, 255, 0.178);
-    min-height: 42rem;
+    min-height: 35rem;
 }
 
 
@@ -55,12 +55,6 @@
     }
 }
 
-@media (max-width: 820px) {
-    .fourGridOverlay {
-        height: 90%;
-    }
-}
-
 @media (max-width: 673px) {
     .fourGrid {
         grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
@@ -76,11 +70,5 @@
         justify-content: center;
         align-items: center;
         padding: 1rem 0;
-    }
-}
-
-@media (max-width: 386px) {
-    .fourGridOverlay {
-        height: 95%;
     }
 }
