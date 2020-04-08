@@ -29,6 +29,12 @@ h2 {
     z-index: 15;
 }
 
+@media (max-width: 600px) {
+    .headerBorder {
+        border: 2rem solid black;
+    }
+}
+
 .headerContent {
     height: 100%;
     text-align: center;
