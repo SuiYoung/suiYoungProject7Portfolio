@@ -7,6 +7,9 @@
 $(".suiButton").on("click", function() {
     $(".WhatsItMean").fadeToggle();
 });
+$(".WhatsItMean").on("click", function () {
+    $(".WhatsItMean").fadeToggle();
+});
 
 // Tooltip only Text
 // Tooltip only Text

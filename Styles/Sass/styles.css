@@ -11,12 +11,12 @@ body {
 /* FONT STYLING */
 h1 {
   font-family: 'Permanent Marker', cursive;
-  font-size: calc(3.5rem + 1.5 * ((100vw - 360px) / 920));
+  font-size: calc(2.8rem + 2.2 * ((100vw - 360px) / 920));
 }
 
 @media screen and (max-width: 360px) {
   h1 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -577,7 +577,7 @@ h2 {
 }
 
 .headerText img {
-  width: 80%;
+  width: 70%;
   margin: 2% 1% 2% 1%;
 }
 
@@ -594,12 +594,22 @@ h2 {
   width: 320px;
   color: white;
   background: #171717;
-  padding: 2rem;
+  padding: 1rem;
   position: absolute;
-  top: 2.5%;
-  right: 2.5%;
+  top: 1%;
+  right: 4%;
   opacity: 0.75;
   display: none;
+}
+
+@media (max-width: 445px) {
+  .WhatsItMean {
+    width: 100%;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    margin-left: -50%;
+  }
 }
 
 .tooltip {

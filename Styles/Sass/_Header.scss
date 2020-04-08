@@ -57,7 +57,7 @@ h2 {
 }
 
 .headerText img {
-    width: 80%;
+    width: 70%;
     margin: 2% 1% 2% 1%;
 
     a {
@@ -74,12 +74,22 @@ h2 {
     width: 320px;
     color: white;
     background: $blackColor;
-    padding: 2rem;
+    padding: 1rem;
     position: absolute;
-    top: 2.5%;
-    right: 2.5%;
+    top: 1%;
+    right: 4%;
     opacity: 0.75;
     display: none;
+}
+
+@media (max-width: 445px) {
+    .WhatsItMean {
+        width: 100%;
+        position: absolute;
+        right: 50%;
+        left: 50%;
+        margin-left: -50%;
+    }
 }
 
 .tooltip {
