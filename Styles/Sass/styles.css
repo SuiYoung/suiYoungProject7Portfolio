@@ -509,10 +509,23 @@ header {
   margin: 0 auto;
 }
 
+@media (max-width: 900px) {
+  header {
+    background: url(./../../Assets/background900.jpg);
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    background: url(./../../Assets/background500.jpg);
+  }
+}
+
 .headerText h1 {
   margin: 1rem;
   color: white;
   font-size: calc(3.5rem + 1.5 * ((100vw - 360px) / 920));
+  border: 2px purple dashed;
 }
 
 @media screen and (max-width: 360px) {
@@ -589,6 +602,15 @@ h2 {
 
 .headerText img a {
   padding: 10rem;
+}
+
+@media (max-width: 4000px) {
+  .headerText h1 {
+    padding-top: 3rem;
+  }
+  .headerText img {
+    width: 50%;
+  }
 }
 
 .suiButton {

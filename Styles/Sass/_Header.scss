@@ -10,10 +10,23 @@ header {
     margin: 0 auto;
 }
 
+@media (max-width: 900px) {
+    header {
+        background: url(./../../Assets/background900.jpg);
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        background: url(./../../Assets/background500.jpg);
+    }
+}
+
 .headerText h1 {
     margin: 1rem;
     color: white;
     @include fluid-type (3.5rem, 5rem, 360px, 1280px);
+    border: 2px purple dashed;
 }
 
 h2 {
@@ -68,6 +81,16 @@ h2 {
 
     a {
         padding: 10rem;
+    }
+}
+
+@media (max-width: 4000px) {
+    .headerText h1 {
+        padding-top: 3rem;
+    }
+
+    .headerText img {
+        width: 50%;
     }
 }
 
