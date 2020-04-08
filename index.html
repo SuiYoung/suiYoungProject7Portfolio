@@ -241,6 +241,7 @@
             </div>
         </section>
 
+        <!-- spacer image -->
         <section class="imgDiv quoteBkGround">
             <div class="overlay2">
                 <h5>"If you are working on something exciting that you really care about, you don't have to be pushed. The vision pulls you."</h5>
@@ -733,6 +734,7 @@
             </div>
         </section>
 
+        <!-- spacer image -->
         <section class="imgDiv quoteBkGround2">
             <div class="overlay2">
                 <h5>"Failure will never overtake me if my determination to succeed is strong enough."</h5> 
@@ -764,27 +766,32 @@
                     <div class="formContainer fadeIn">
                         <form action="https://formspree.io/mzbvrjyr" method="POST">
                             <!-- 2x Input for name and email address -->
-                            <label for="name" class="visuallyHidden">Name:</label>
-                            <div class="contactToolTip contactToolTip1 hidden" id= "nameInput">
-                                <p>Enter Your Name Here</p>
+                            <div class="contactInput contactInput1">
+                                <label for="name" class="visuallyHidden">Name:</label>
+                                <div class="contactToolTip hidden" id= "nameInput">
+                                    <p>Enter Your Name Here</p>
+                                </div>
+                                <input placeholder="&nbsp;Name" type="text" required="true" id="name" class="idField" title= "Enter Your Name Here">
                             </div>
-                            <input placeholder="&nbsp;Name" type="text" required="true" id="name" class="idField" title= "Enter Your Name Here">
                             
-            
-                            <label for="email" class="visuallyHidden">Email:</label>
-                            <div class="contactToolTip contactToolTip2 hidden" id="emailInput">
-                                <p>Enter Your Email Here</p>
+                            <div class="contactInput contactInput2">
+                                <label for="email" class="visuallyHidden">Email:</label>
+                                <div class="contactToolTip hidden" id="emailInput">
+                                    <p>Enter Your Email Here</p>
+                                </div>
+                                <input type="email" placeholder="&nbsp;Email address" required="true" id="email"
+                                    class="idField2" title="Enter Your Email Here">
                             </div>
-                            <input type="email" placeholder="&nbsp;Email address" required="true" id="email"
-                                class="idField2" title="Enter Your Email Here">
                             
-                            <!-- large textbox input for comment -->
-                            <label for="message" class="visuallyHidden">Your Message:</label>
-                            <div class="contactToolTip contactToolTip3 hidden" id="messageInput">
-                                <p>What's Your Message?</p>
+                            <div class="contactInput contactInput3">
+                                <!-- large textbox input for comment -->
+                                <label for="message" class="visuallyHidden">Your Message:</label>
+                                <div class="contactToolTip hidden" id="messageInput">
+                                    <p>What's Your Message?</p>
+                                </div>
+                                <textarea name="comments" placeholder="&nbsp;Message" cols="30" rows="10" class="textField"
+                                    id="message" title="What's Your Message?"></textarea>
                             </div>
-                            <textarea name="comments" placeholder="&nbsp;Message" cols="30" rows="10" class="textField"
-                                id="message" title="What's Your Message?"></textarea>
             
                             <button class="submitButton" type="submit">Send Email</button>
                         </form>

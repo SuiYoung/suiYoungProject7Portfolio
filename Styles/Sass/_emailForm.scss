@@ -28,26 +28,30 @@ form {
     font-size: 2.5rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+.contactInput {
     position: relative;
+}
 
-    .idField {
-        display: inline-block;
-        width: 100%;
-    }
+.idField, .idField2 {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
 
-    .idField2 {
-        display: inline-block;
-        width: 100%;
-    }
+.contactInput3 {
+    grid-area: 2 / span 2;
+}
 
-    .textField {
-        grid-area: 2 / span 2;
-    }
+.textField {
+    width: 100%;
+    height: 100%;
+}
 
-    .submitButton {
-        grid-area: 3 / span 2;
-        width: 100%;
-    }
+.submitButton {
+    grid-area: 3 / span 2;
+    width: 100%;
 }
 
 .contactLink {
@@ -61,40 +65,9 @@ form {
     background: $blackColor;
     border-radius: 5px;
     padding: 0.5rem;
-}
-
-.contactToolTip1 {
     position: absolute;
     top: -3rem;
-    z-index: 1;
-}
-
-.contactToolTip2 {
-    position: absolute;
-    top: -3rem;
-    left: 31rem;
-    z-index: 1;
-}
-
-.contactToolTip3 {
-    position: absolute;
-    top: 4rem;
     z-index: 15;
-}
-
-@media (max-width: 950px) {
-    .contactToolTip2 {
-        position: absolute;
-        top: 4rem;
-        left: 0rem;
-        z-index: 15;
-    }
-
-    .contactToolTip3 {
-        position: absolute;
-        top: 10rem;
-        z-index: 15;
-    }
 }
 
 .hidden {
@@ -118,15 +91,15 @@ form {
         margin-left: 0;
         margin-right: 0;
 
-        .idField {
+        .contactInput1 {
             grid-area: 1 / span 2;
         }
 
-        .idField2 {
+        .contactInput2 {
             grid-area: 2 / span 2;
         }
 
-        .textField {
+        .contactInput3 {
             grid-area: 3 / span 2;
         }
 

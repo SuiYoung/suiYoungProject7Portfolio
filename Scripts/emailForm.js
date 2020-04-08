@@ -45,3 +45,27 @@ emailApp.init = () => {
     emailApp.clearFields();
 }
 emailApp.init();
+
+// tooltips for contactform on focus
+$("#name").focusout(function() {
+        $("#nameInput").addClass("hidden");
+    })
+    .focusin(function () {
+        $("#nameInput").removeClass("hidden");
+    });
+
+$("#email")
+    .focusout(function () {
+        $("#emailInput").addClass("hidden");
+    })
+    .focusin(function () {
+        $("#emailInput").removeClass("hidden");
+    });
+
+$("#message")
+    .focusout(function () {
+        $("#messageInput").addClass("hidden");
+    })
+    .focusin(function () {
+        $("#messageInput").removeClass("hidden");
+    });
