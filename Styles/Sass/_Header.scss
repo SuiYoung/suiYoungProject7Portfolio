@@ -13,12 +13,20 @@ header {
 @media (max-width: 900px) {
     header {
         background: url(./../../Assets/background900.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 
 @media (max-width: 500px) {
     header {
         background: url(./../../Assets/background500.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
     }
 }
 
@@ -26,7 +34,7 @@ header {
     margin: 1rem;
     color: white;
     @include fluid-type (3.5rem, 5rem, 360px, 1280px);
-    border: 2px purple dashed;
+    border-bottom: 2px lavender solid;
 }
 
 h2 {

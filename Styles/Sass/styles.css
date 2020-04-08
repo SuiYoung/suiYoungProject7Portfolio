@@ -512,12 +512,20 @@ header {
 @media (max-width: 900px) {
   header {
     background: url(./../../Assets/background900.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
 @media (max-width: 500px) {
   header {
     background: url(./../../Assets/background500.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
@@ -525,7 +533,7 @@ header {
   margin: 1rem;
   color: white;
   font-size: calc(3.5rem + 1.5 * ((100vw - 360px) / 920));
-  border: 2px purple dashed;
+  border-bottom: 2px lavender solid;
 }
 
 @media screen and (max-width: 360px) {
