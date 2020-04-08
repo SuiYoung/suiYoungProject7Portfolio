@@ -1619,6 +1619,27 @@ form {
   -ms-grid-row: 3;
   grid-area: 3 / span 2;
   width: 100%;
+  display: block;
+  background: #C9C9C9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#C9C9C9), to(#464646));
+  background-image: linear-gradient(to bottom, #C9C9C9, #464646);
+  border-radius: 50px;
+  font-weight: 500;
+  box-shadow: 8px 11px 10px 0px #000000;
+  -webkit-box-shadow: 8px 11px 10px 0px #000000;
+  -moz-box-shadow: 8px 11px 10px 0px #000000;
+  text-shadow: 1px 1px 20px #000000;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.submitButton:hover {
+  border: solid #337FED 1px;
+  background: #464646;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#464646), to(#C9C9C9));
+  background-image: linear-gradient(to bottom, #464646, #C9C9C9);
+  border-radius: 50px;
+  text-decoration: none;
 }
 
 .contactLink {
@@ -1647,7 +1668,7 @@ form {
   }
   form {
     width: 100%;
-    height: 60vh;
+    min-height: 60vh;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
