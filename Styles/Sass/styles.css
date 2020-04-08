@@ -533,7 +533,7 @@ header {
   margin: 1rem;
   color: white;
   font-size: calc(3.5rem + 1.5 * ((100vw - 360px) / 920));
-  border-bottom: 2px lavender solid;
+  border-bottom: 2px lightcoral solid;
 }
 
 @media screen and (max-width: 360px) {
