@@ -1,0 +1,17 @@
+// particle.js styling
+canvas {
+    display: block;
+    height: 100%;
+}
+
+/* ---- particles.js container ---- */
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 0.5396359227284664) 0%, rgba(9, 9, 121, 0.3743698162858894) 30%, rgba(0, 212, 255, 0.20630258939513302) 75%);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // border: 5rem black solid;
+}

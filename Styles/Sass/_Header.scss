@@ -25,6 +25,8 @@ h2 {
     height: 100%;
     width: 100%;
     border: 5rem solid black;
+    position: relative;
+    z-index: 15;
 }
 
 .headerContent {
@@ -38,6 +40,8 @@ h2 {
     width: 35rem;
     margin: 0 auto;
     background: rgba(0, 0, 0, 0.425);
+    position: relative;
+    z-index: 15;
 }
 
 @media (max-width: 440px) {
@@ -86,6 +90,7 @@ h2 {
     border-radius: 5px;
     padding: 10px;
     color: #fff;
+    z-index: 15;
 }
 
 .headerText {
@@ -144,7 +149,7 @@ input[type=checkbox] {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    z-index: 5;
+    z-index: 18;
     background: white;
     border-radius: 50%;
     display: flex;

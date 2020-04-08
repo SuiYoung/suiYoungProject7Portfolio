@@ -111,27 +111,6 @@ section {
     max-width: 1920px;
 }
 
-// particle.js styling
-canvas {
-    display: block;
-    vertical-align: bottom;
-}
-
-/* ---- particles.js container ---- */
-#particles-js {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.288);
-    background-image: url("");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-    // background-position: 50% 50%;
-}
-
 // accessibility styling:
 .sr-only {
     position: absolute;
