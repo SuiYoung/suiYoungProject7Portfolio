@@ -315,8 +315,8 @@ var global = {
             }
             if (count == 10) {
             // Success!
-            alert("Konami code entered! Something cool might be coming! For now, enjoy this!");
-            window.location.href = "game.html";
+            swal("Konami code entered!", "...Hold Onto Your Seats!");
+            window.location.href = "https://vimeo.com/405710615";
             reset();
             }
         } else {
