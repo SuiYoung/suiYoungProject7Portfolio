@@ -123,6 +123,7 @@ h5 {
 p {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  line-height: 3rem;
   font-size: calc(1.5rem + 0.5 * ((100vw - 360px) / 920));
 }
 
@@ -145,6 +146,7 @@ p {
 li {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  line-height: 3rem;
   font-size: calc(1.5rem + 0.5 * ((100vw - 360px) / 920));
 }
 
@@ -185,7 +187,8 @@ a {
 }
 
 a:hover {
-  color: black !important;
+  color: teal !important;
+  font-weight: 700;
 }
 
 /****** GENERAL STYLING ******/
@@ -213,7 +216,7 @@ img {
 section {
   margin: 5rem 0;
   color: white;
-  padding: 2rem 0;
+  padding: 5rem 0;
   max-width: 1920px;
 }
 
@@ -634,7 +637,7 @@ h2 {
   position: absolute;
   top: 1%;
   right: 4%;
-  opacity: 0.75;
+  opacity: 0.95;
   display: none;
 }
 
@@ -1112,7 +1115,8 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  margin: 3% auto;
+  position: relative;
 }
 
 /*
@@ -1128,7 +1132,6 @@ nav {
   color: #171717;
   text-shadow: 2.5px 2.5px 2.5px teal;
   margin: 0;
-  text-align: center;
 }
 
 @media screen and (max-width: 420px) {
@@ -1145,8 +1148,8 @@ nav {
 
 .toggleMenuDescription {
   background: #171717;
-  position: relative;
-  left: 4rem;
+  position: absolute;
+  left: 8rem;
   display: block;
   width: 150px;
   height: 60px;
@@ -1183,13 +1186,10 @@ nav {
   left: -49.5px;
 }
 
-#menu li:last-child {
-  margin-left: 2px;
-}
-
 #menu li:hover {
   text-shadow: 4px 4px 4px teal;
-  margin-left: 15%;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -1378,7 +1378,62 @@ h4 {
           align-items: flex-end;
 }
 
-.languagesUsed,
+.portfolioLanguages {
+  font-family: 'Montserrat', sans-serif;
+  font-size: calc(10px + 2 * ((100vw - 360px) / 920));
+}
+
+@media screen and (max-width: 360px) {
+  .portfolioLanguages {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .portfolioLanguages {
+    font-size: 12px;
+  }
+}
+
+.languagesUsed {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+}
+
+.languagesUsed li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+  padding: 0.5rem;
+  background: #171717;
+  border-radius: 5px;
+}
+
+.languagesUsed li img {
+  width: 50px;
+}
+
+.languagesUsed .languageLi {
+  background: #1717174d;
+  margin: 0.5rem;
+}
+
 .portfolioLinks {
   list-style-type: none;
   display: -webkit-box;
@@ -1392,7 +1447,6 @@ h4 {
   width: 100%;
 }
 
-.languagesUsed li,
 .portfolioLinks li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1412,35 +1466,25 @@ h4 {
   background: #171717;
   border-radius: 5px;
   font-family: 'Montserrat', sans-serif;
-  font-size: calc(1.25rem + 0.55 * ((100vw - 360px) / 920));
+  font-size: calc(1.25rem + 0.25 * ((100vw - 360px) / 920));
 }
 
 @media screen and (max-width: 360px) {
-  .languagesUsed li,
   .portfolioLinks li {
     font-size: 1.25rem;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .languagesUsed li,
   .portfolioLinks li {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 }
 
-.languagesUsed li img,
 .portfolioLinks li img {
   width: 50px;
 }
 
-.languagesUsed .languageLi,
-.portfolioLinks .languageLi {
-  background: #1717174d;
-  margin: 0.5rem;
-}
-
-.languagesUsed a,
 .portfolioLinks a {
   color: white;
 }
@@ -1495,7 +1539,6 @@ h4 {
     margin: 0 auto;
     width: auto-fit;
   }
-  .languagesUsed,
   .portfolioLinks {
     margin: 0 auto;
     display: -webkit-box;

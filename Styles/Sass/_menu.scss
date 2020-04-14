@@ -144,7 +144,8 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 3% auto;
+    position: relative;
 }
 
 /*
@@ -159,13 +160,12 @@ nav {
     color: $blackColor;
     text-shadow: 2.5px 2.5px 2.5px teal;
     margin: 0;
-    text-align: center;
 }
 
 .toggleMenuDescription {
     background: $blackColor;
-    position: relative;
-    left: 4rem;
+    position: absolute;
+    left: 8rem;
     display: block;
     width: 150px;
     height: 60px;
@@ -195,13 +195,9 @@ nav {
     }
 }
 
-#menu li:last-child {
-    margin-left: 2px;
-}
-
 #menu li:hover {
     text-shadow: 4px 4px 4px teal;
-    margin-left: 15%;
+    transform: scale(1.15);
     transition: all 0.5s ease-in-out;
 }
 
