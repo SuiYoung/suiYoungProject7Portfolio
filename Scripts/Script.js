@@ -12,7 +12,6 @@ $(".WhatsItMean").on("click", function () {
 });
 
 // Tooltip only Text
-// Tooltip only Text
 $('.suiButton2').hover(function(){
         // Hover over code
         var title = $(this).attr('title');
@@ -62,15 +61,14 @@ $(document).ready(function() {
 
 
 // my typed.js customization
-
 $(function() {
     $(".headerH2").typed({
         strings: [
             "... ^1250",
-        "I'm a Front-End Web Developer! ^800",
-        "I'm Currently Looking For Work! ^800",
-        "Thanks for Stopping By! ^800",
-        "Front-End Web Developer"
+        "I'm a Web Developer!",
+        "Currently working with PHP, Wordpress and React Native!",
+        "I am also a graphic designer and writer!",
+        "Web Developer"
         ],
         typeSpeed: 0,
         showCursor: false,
@@ -80,7 +78,6 @@ $(function() {
     });
 
     // I'm including the Type.js Library here.
-
     // Typed.js | Copyright (c) 2014 Matt Boldt | www.mattboldt.com
     // https://github.com/mattboldt/typed.js
     !(function(t) {
